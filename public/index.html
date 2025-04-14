@@ -1,9 +1,119 @@
-<!doctype html>
-<head>
-    <title> b l a n k </title>
-</head>
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
 
-<body>
-   <canvas id="cnv_element"></canvas>
-   <script src="script.js"></script>
-</body>
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="cir_id" src="img/cir.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="tri_id" src="img/tri.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="squ_id" src="img/squ.png" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="hex_id" src="img/hex.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="rec_id" src="img/rec.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="sta_id" src="img/sta.png" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="trr_id" src="img/trr.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+        </div>
+        
+    </body>
+    
+</html>
+
+<script>
+    const cir_el = document.getElementById ('cir_id')
+    const cir_sound = new Audio ('Sounds/ZOOM0013.WAV')
+    cir_el.onpointerdown = () => {
+        cir_el.src = 'img/tri.png'
+        cir_sound.play ()
+        setTimeout (() => {
+            cir_el.src = 'img/cir.png'
+        }, 1000)
+    }
+
+    const tri_el = document.getElementById ('tri_id')
+    const tri_sound = new Audio ('Sounds/ZOOM0014.WAV')
+    tri_el.onpointerdown = () => {
+        tri_el.src = 'img/hex.png'
+        tri_sound.play ()
+        setTimeout (() => {
+            tri_el.src = 'img/tri.png'
+        }, 1000)
+    }
+    
+    const squ_el = document.getElementById ('squ_id')
+    const squ_sound = new Audio ('Sounds/ZOOM0012.WAV')
+    squ_el.onpointerdown = () => {
+        squ_el.src = 'img/sta.png'
+        squ_sound.play ()
+        setTimeout (() => {
+            squ_el.src = 'img/squ.png'
+        }, 1000)
+    }
+
+    const hex_el = document.getElementById ('hex_id')
+    const hex_sound = new Audio ('Sounds/ZOOM0005.WAV')
+    hex_el.onpointerdown = () => {
+        hex_el.src = 'img/her.png'
+        hex_sound.play ()
+        setTimeout (() => {
+            hex_el.src = 'img/hex.png'
+        }, 1000)
+    }
+ 
+    const rec_el = document.getElementById ('rec_id')
+    const rec_sound = new Audio ('Sounds/ZOOM0005.WAV')
+    rec_el.onpointerdown = () => {
+        rec_el.src = 'img/sqr.png'
+        rec_sound.play ()
+        setTimeout (() => {
+        rec_el.src = 'img/rec.png'
+        },1000)
+    }
+
+    const sta_el = document.getElementById ('sta_id')
+    const sta_sound = new Audio ('Sounds/ZOOM0008.WAV')
+    sta_el.onpointerdown = () => {
+        sta_el.src = 'img/trr.png'
+        sta_sound.play ()
+        setTimeout (() => {
+            sta_el.src = 'img/sta.png'
+        },1000)
+    }
+
+    const trr_el= document.getElementById ('trr_id')
+    const trr_sound = new Audio ('Sounds/ZOOM0011.WAV')
+    trr_el.onpointerdown = () => {
+       trr_el.src = 'img/tri.png'
+       trr_sound.play ()
+       setTimeout (() => {
+           trr_el.src = 'img/trr.png'    
+       },1000)
+    }
+
+
+</script>
+
+
+
+
