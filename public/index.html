@@ -19,101 +19,121 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img id="cir_id" src="img/cir.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="tri_id" src="img/tri.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="squ_id" src="img/squ.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Ball1_id" src="img/Ball1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Fit1_id" src="img/Fit1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Dri1_id" src="img/Dri1.png" height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img id="hex_id" src="img/hex.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="rec_id" src="img/rec.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="sta_id" src="img/sta.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Ate1_id" src="img/Ate1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Pre1_id" src="img/Pre1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Run1_id" src="img/Run1.png" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img id="trr_id" src="img/trr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Ste1_id" src="img/Ste1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Goa1_id" src="img/Goa1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Gym1_id" src="img/Gym1.png" height="200" width="200"/></div>
         </div>
         
     </body>
     
-</html>
+</html> 
 
 <script>
-    const cir_el = document.getElementById ('cir_id')
-    const cir_sound = new Audio ('Sounds/ZOOM0013.WAV')
-    cir_el.onpointerdown = () => {
-        cir_el.src = 'img/tri.png'
-        cir_sound.play ()
+    const Gym1_el = document.getElementById ('Gym1_id')
+    const Gym1_sound = new Audio ('Sounds/Gym.mp3')
+    Gym1_el.onpointerdown = () => {
+        Gym1_el.src = 'img/Gym2.png'
+        Gym1_sound.play ()
         setTimeout (() => {
-            cir_el.src = 'img/cir.png'
-        }, 1000)
+            Gym1_el.src = 'img/Gym1.png'
+        }, 300)
     }
 
-    const tri_el = document.getElementById ('tri_id')
-    const tri_sound = new Audio ('Sounds/ZOOM0014.WAV')
-    tri_el.onpointerdown = () => {
-        tri_el.src = 'img/hex.png'
-        tri_sound.play ()
+    const Ball1_el = document.getElementById ('Ball1_id')
+    const Ball1_sound = new Audio ('Sounds/basketball-swish.mp3')
+    Ball1_el.onpointerdown = () => {
+        Ball1_el.src = 'img/Ball2.png'
+        Ball1_sound.play ()
         setTimeout (() => {
-            tri_el.src = 'img/tri.png'
-        }, 1000)
+            Ball1_el.src = 'img/Ball1.png'
+        }, 300)
+    }
+
+    const Fit1_el = document.getElementById ('Fit1_id')
+    const Fit1_sound = new Audio ('Sounds/Clo-Switch.mp3')
+    Fit1_el.onpointerdown = () => {
+        Fit1_el.src = 'img/Fit2.png'
+        Fit1_sound.play ()
+        setTimeout (() => {
+            Fit1_el.src = 'img/Fit1.png'
+        }, 400)
+    }
+
+    const Pre1_el = document.getElementById ('Pre1_id')
+    const Pre1_sound = new Audio ('Sounds/lid-pop.mp3')
+    Pre1_el.onpointerdown = () => {
+        Pre1_el.src = 'img/Pre2.png'
+        Pre1_sound.play ()
+        setTimeout (() => {
+            Pre1_el.src = 'img/Pre1.png'
+        }, 300)
+    }
+
+    const Ate1_el = document.getElementById ('Ate1_id')
+    const Ate1_sound = new Audio ('Sounds/Pop.mp3')
+    Ate1_el.onpointerdown = () => {
+        Ate1_el.src = 'img/Ate2.png'
+        Ate1_sound.play ()
+        setTimeout (() => {
+            Ate1_el.src = 'img/Ate1.png'
+        }, 380)
+    }
+
+    const Run1_el = document.getElementById ('Run1_id')
+    const Run1_sound = new Audio ('Sounds/Switch.mp3')
+    Run1_el.onpointerdown = () => {
+        Run1_el.src = 'img/Run2.png'
+        Run1_sound.play ()
+        setTimeout (() => {
+            Run1_el.src = 'img/Run1.png'
+        }, 300)
     }
     
-    const squ_el = document.getElementById ('squ_id')
-    const squ_sound = new Audio ('Sounds/ZOOM0012.WAV')
-    squ_el.onpointerdown = () => {
-        squ_el.src = 'img/sta.png'
-        squ_sound.play ()
+    const Dri1_el = document.getElementById ('Dri1_id')
+    const Dri1_sound = new Audio ('Sounds/water-splonk.mp3')
+    Dri1_el.onpointerdown = () => {
+        Dri1_el.src = 'img/Dri3.png'
+        Dri1_sound.play ()
         setTimeout (() => {
-            squ_el.src = 'img/squ.png'
-        }, 1000)
+            Dri1_el.src = 'img/Dri1.png'
+        }, 400)
+    }
+    
+    const Ste1_el = document.getElementById ('Ste1_id')
+    const Ste1_sound = new Audio ('Sounds/step.wav')
+    Ste1_el.onpointerdown = () => {
+        Ste1_el.src = 'img/Ste2.png'
+        Ste1_sound.play ()
+        setTimeout (() => {
+            Ste1_el.src = 'img/Ste1.png'
+        }, 300)
     }
 
-    const hex_el = document.getElementById ('hex_id')
-    const hex_sound = new Audio ('Sounds/ZOOM0005.WAV')
-    hex_el.onpointerdown = () => {
-        hex_el.src = 'img/her.png'
-        hex_sound.play ()
+    const Goa1_el = document.getElementById ('Goa1_id')
+    const Goa1_sound = new Audio ('Sounds/Gold.mp3')
+    Goa1_el.onpointerdown = () => {
+        Goa1_el.src = 'img/Goa2.png'
+        Goa1_sound.play ()
         setTimeout (() => {
-            hex_el.src = 'img/hex.png'
-        }, 1000)
-    }
- 
-    const rec_el = document.getElementById ('rec_id')
-    const rec_sound = new Audio ('Sounds/ZOOM0005.WAV')
-    rec_el.onpointerdown = () => {
-        rec_el.src = 'img/sqr.png'
-        rec_sound.play ()
-        setTimeout (() => {
-        rec_el.src = 'img/rec.png'
-        },1000)
+            Goa1_el.src = 'img/Goa1.png'
+        }, 400)
     }
 
-    const sta_el = document.getElementById ('sta_id')
-    const sta_sound = new Audio ('Sounds/ZOOM0008.WAV')
-    sta_el.onpointerdown = () => {
-        sta_el.src = 'img/trr.png'
-        sta_sound.play ()
-        setTimeout (() => {
-            sta_el.src = 'img/sta.png'
-        },1000)
-    }
-
-    const trr_el= document.getElementById ('trr_id')
-    const trr_sound = new Audio ('Sounds/ZOOM0011.WAV')
-    trr_el.onpointerdown = () => {
-       trr_el.src = 'img/tri.png'
-       trr_sound.play ()
-       setTimeout (() => {
-           trr_el.src = 'img/trr.png'    
-       },1000)
-    }
-
+    
+    
+    
+    
 
 </script>
-
-
-
-
